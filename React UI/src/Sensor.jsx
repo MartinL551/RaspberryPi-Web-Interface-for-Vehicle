@@ -3,7 +3,6 @@ import './Controls.css';
 
 
 export const SensorComponent = ({id, title, sensorIds, APIServerIP, renderSize }) => {
-  let cameraBool = false;
   let [cameraUrl, setCameraUrl] = useState("");
   let [ultraSonicValue, setUltraSonicValue] = useState("Fetching Distance")
 
@@ -52,7 +51,7 @@ export const SensorComponent = ({id, title, sensorIds, APIServerIP, renderSize }
   return(
     <div className="sensorContainer">
       {sensorIds.cameraVal ?  <div className="sensorVideoContainer">
-        <img style={{height: "100%"}}  src={cameraUrl} />
+        <img alt="" style={{height: "100%"}}  src={cameraUrl} />
       </div> : null }
       {sensorIds.ultraSonicSensor.uSval ? <div className="usContainer">
          <p>{ultraSonicValue}</p>

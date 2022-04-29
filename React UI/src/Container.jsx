@@ -49,8 +49,7 @@ export const Container = ({motors, APIServerIP, controls, setControls}) => {
 
  let updateControlPos = () => {
    let controlsCopy = controls;
-   let controlSize = {};
-   Object.keys(controlsCopy).map((key) => {
+   Object.keys(controlsCopy).forEach((key) => {
      let controlSize = controlsCopy[key].controlSize
      if(controlsCopy[key].type === "control"){
        let multiplyer = 0.05;
@@ -139,19 +138,16 @@ updateControlPos()
           width: playgroundSize.width * 0.05,
           height: playgroundSize.width * 0.05,
         }
-        controlSize = controlSize;
       }else{
         controlSize = {
           width: playgroundSize.width * 0.3,
           height: (playgroundSize.width * 0.3) * (9 / 16)
         }
-       controlSize = controlSize;
         if(controlSize.height > playgroundSize.height){
           controlSize = {
             height: playgroundSize.height * 0.3,
             width: (playgroundSize.height * 0.3) * (16 / 9)
           }
-          controlSize = controlSize;
         }
       }
 

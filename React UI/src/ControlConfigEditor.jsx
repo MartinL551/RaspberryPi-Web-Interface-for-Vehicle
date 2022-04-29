@@ -1,7 +1,7 @@
 import React from 'react';
 import './Modal.css';
 import { ControlTypeButton }  from './ControlTypeButton.jsx'
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 export const ControlConfigEditor = ({controlObj, motors, setModalState, setControls, controls}) => {
   const handleClose = () => {
