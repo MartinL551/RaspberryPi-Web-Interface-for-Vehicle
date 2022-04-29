@@ -93,7 +93,7 @@ async function handleCommand(req, res){
   console.log(req.body)
   try{
     console.log("command recived")
-    motorFunctions.moveMotor(motorsArray[JSONcommand.motorId], JSONcommand.command)
+    await motorFunctions.moveMotor(motorsArray[JSONcommand.motorId], JSONcommand.command)
     res.send('204');
   }catch(e){
     error(res, `command failed ${e}`);
@@ -134,6 +134,15 @@ async function handleSaveConfig(req, res){
   let JSONData = req.body;
   console.log(JSONData)
   fs.writeFileSync(path.join(__dirname, '/public/js/motor_config_file.json'), JSON.stringify(JSONData))
+  rawdata = fs.readFileSync(path.join(__dirname, '/public/js/motor_config_file.json'), 'utf8');
+  motorsArray = JSON.parse(rawdata);
+
+  console.log(rawdata);
+
+  motorsArray.forEach((motor) => {
+		motor.GPIO_forwards = new Gpio(motor.output1, 'out');
+		motor.GPIO_backwards = new Gpio(motor.output2, 'out');
+		});
 }
 
 
