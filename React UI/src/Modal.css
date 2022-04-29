@@ -1,0 +1,330 @@
+@media only screen (max-wdith: 1200px){
+
+}
+button:hover{
+  cursor: pointer;
+}
+
+.editorContainer{
+  width: 400px;
+  background: #F8F8F8;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  text-align: center;
+  border: 1px solid #CCCCCC;
+  border-radius: 10px;
+  max-height: 800px;
+  overflow: auto;
+}
+
+.backdropOverlay{
+  background-color: #59595960;
+  top: 0%;
+  left: 0%;
+  position: absolute;
+  z-index: 9999;
+  height: 100vh;
+  width: 100vw;
+}
+
+.editorContainer h2{
+  background-color: #5CFCFF60;
+  padding-top: 2px;
+  margin-top: 0px;
+  border-radius: 10px;
+  font-family: 'Roboto', cursive;
+  margin-bottom: 0px;
+  text-overflow: ellipsis;
+}
+
+.editorContainer form{
+  margin-bottom: 10px;
+}
+
+.editorContainer li p{
+  text-align: left;
+  width: 20%;
+  display: inline-block;
+  font-family: 'Roboto', cursive;
+  text-overflow: ellipsis;
+}
+
+.editorContainer button:hover{
+  cursor: pointer;
+  background-color: lightgrey;
+}
+
+.editorContainer ul{
+  margin: auto;
+  margin-top: 15px;
+  padding: 5px;
+}
+
+.modalExit{
+
+  display: inline;
+  text-align: right;
+  color: red;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 0px;
+  padding-left: 2px;
+  padding-right: 2px;
+  font-size: 1em;
+  margin: auto;
+  margin-left: 20%;
+
+}
+
+.modalExitContainer{
+  background-color: #5CFCFF60;
+  padding-top: 2px;
+  margin-top: 0px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 90% 10%
+}
+
+.modalExitContainer h2{
+    display: inline-block;
+    background-color: unset !important;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.modalExitTitleContainer{
+  width: 80%;
+  margin-left: 15%;
+  margin-right: auto;
+}
+
+.addControlModal li{
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 10px;
+}
+
+.addControlModal p {
+  width: 50% !important;
+  text-align: left !important;
+  padding: 0;
+  margin: 0;
+}
+
+.addControlModal input, .addControlModal select{
+  float: left;
+}
+
+.editorContainer input, .editorContainer select{
+  background-color: white;
+  border-radius: 5px;
+  font-family: 'Roboto', cursive;
+}
+
+.addControlSave{
+  margin: auto;
+  margin-right: 5%;
+  height: 30px;
+  font-family: 'Roboto', cursive;
+  background-color: #337AB7;
+  border: 1px solid grey;
+  border-radius: 5px;
+  color: white;
+  padding: 5px 20px 5px 20px;
+  font-size: 1em;
+
+}
+
+.addControlSaveContainer{
+  width: 100%;
+  display: flex;
+  align-content: flex-end;
+}
+
+.motorConfigModal li{
+  list-style: none;
+  margin-bottom: 5px;
+}
+
+.motorConfigModal input{
+  display: inline-block;
+  width: 70%;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.motorConfigModalInputsContainer{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+
+.motorConfigModalTitleContainer{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.motorConfigModalTitleContainer p{
+  width: 100% !important;
+  text-align: center !important;
+}
+
+.idContainer input{
+  border: 0px !important;
+  text-align: center;
+  background-color: unset;
+  border-radius: 0px;
+  pointer-events:none;
+  outline: none;
+}
+
+.deleteButton{
+  color: black !important;
+  background-color: #FF7777 !important;
+}
+
+.deleteButton:hover{
+    background-color: red !important;
+}
+
+.addNewMotorContainer{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.addNewMotorContainer p{
+  width: 100% !important;
+  text-align: center !important;
+}
+
+.addMotorList{
+
+  width: 80% !important;
+  margin: auto;
+  margin-top: 15px;
+}
+
+
+.addButton{
+  color: black !important;
+  background-color: #009900 !important;
+  padding: 1px 4px 1px 4px
+}
+
+.addButton:hover{
+    background-color: darkgreen !important;
+}
+
+.addSaveContainer{
+  width: 100% !important;
+}
+
+.motorConfigSave{
+  margin-right: 0px !important;
+}
+
+.motorsListContainer{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+}
+.motorsListContainer p{
+  width: 100% !important;
+  text-align: center !important;
+  font-family: 'Roboto', cursive;
+}
+.assMotorsListContainer{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.assMotorsListContainer p {
+  width: 100% !important;
+  text-align: center !important;
+  padding: 0 !important;
+  margin: 0 !important
+}
+
+
+.assignedMotorsList{
+  list-style: none;
+}
+
+.assignedMotorsList p{
+  font-family: 'Roboto', cursive;
+}
+
+.assignedMotorsList input, .addMotorToControlForm input {
+  display: inline-block;
+  width: 70%;
+  background-color: white;
+  border-radius: 5px;
+}
+
+
+.motorsListContainer li, .assignedMotorsList li{
+  margin-bottom: 10px;
+}
+
+.assignedMotorTitleLabel{
+  width: 100% !important;
+  text-align: center !important;
+}
+
+.controlConfigSave{
+  margin-top: 10px;
+}
+
+.controlConfigModal ul {
+  margin-top: 0px !important;
+}
+
+.addMotorToControlForm{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.typeButton p {
+  margin: 0px !important;
+  padding: 0px !important;
+  width: 100%;
+}
+
+.typeButton{
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.sensorDropDownContainer{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.sensorDropDownContainer {
+}
+
+.usSensorContainer{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 10px;
+}
+
+.sensorSaveButton{
+  margin-top: 10px;
+}
+
+.editorContainer label{
+  font-family: 'Roboto', cursive;
+}
+
+.sensorError{
+  color: red;
+  font-family: 'Roboto', cursive;
+}

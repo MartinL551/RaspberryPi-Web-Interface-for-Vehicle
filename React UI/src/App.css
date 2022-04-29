@@ -1,0 +1,40 @@
+.font-link {
+  font-family: 'Roboto', cursive;
+}
+
+.App {
+  text-align: center;
+}
+
+
+.navBar{
+  background-color: #5CFCFF60;;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.navBar button {
+  margin: 5px;
+  font-family: 'Roboto', cursive;
+  width: 30%;
+  margin: 5px auto;
+  background-color: #337AB7;
+  border: 1px solid grey;
+  border-radius: 5px;
+  color: white;
+  padding: 5px 20px 5px 20px;
+  font-size: 1em;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+
+@media (max-width: 1400px) {
+  .navBar button{
+    width: 80%;
+    height: 50px;
+    margin-left: auto !important;
+  }
+}
