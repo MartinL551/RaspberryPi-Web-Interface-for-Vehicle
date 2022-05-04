@@ -244,21 +244,18 @@ const EditConfigForm = ({motorsFile, setMotorsFile, setShowMotorConfig, controls
 
       for(let i = 0; i < motorsFileCopy.length; i++){
         controlsCopy[key].motorIds.forEach((motor, index) => {
-          console.log("motorsFileId", motorsFile[i].id)
-          console.log("motorControlId", motor[0])
+
           if(parseInt(motorsFile[i].id) === motor[0]){
-            console.log("adding motor to new Array")
+
             newMotorIds.push(motor)
           }
         })
       }
 
-      console.log(newMotorIds)
       controlsCopy[key].motorIds = newMotorIds;
 
     })
     setControls(controlsCopy)
-    console.log("deletedMotors", controls)
   }
 
   const handleEditorSubmit = (e) => {
