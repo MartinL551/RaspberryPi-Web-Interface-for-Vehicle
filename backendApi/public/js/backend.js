@@ -2,7 +2,7 @@ const Gpio = require('onoff').Gpio;
 const {DistanceMeter} = require('./sensors.js')
 
 
-let collisonAvoidance = true;
+let collisonAvoidance = false;
 let usSensorVals = [[23, 18]];
 let usSensor = []
 usSensorVals.forEach((sensorVal) => {
